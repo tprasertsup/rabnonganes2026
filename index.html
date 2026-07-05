@@ -177,11 +177,38 @@
         linear-gradient(135deg, transparent 48%, rgba(56, 103, 232, 0.08) 48% 52%, transparent 52%),
         #fff;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 80px;
+      gap: 16px;
       position: relative;
       z-index: 1;
+    }
+
+    .people-group {
+      display: flex;
+      gap: 18px;
+      padding: 18px 24px;
+      background: rgba(56, 103, 232, 0.08);
+      border-radius: 24px;
+      box-shadow: inset 0 0 0 1px rgba(56, 103, 232, 0.12);
+    }
+
+    .person {
+      width: 70px;
+      height: 70px;
+      display: grid;
+      place-items: center;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(35, 63, 158, 0.08);
+      font-size: 42px;
+    }
+
+    .people-text {
+      font-size: 18px;
+      color: var(--blue-dark);
+      font-weight: 800;
     }
 
     .cta-row {
@@ -422,18 +449,19 @@
     }
 
     .qr-placeholder {
-      width: 220px;
-      height: 220px;
+      width: auto;
+      height: auto;
       margin: 26px auto;
-      background: white;
-      border: 2px dashed #9fb0ec;
-      border-radius: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-weight: 800;
-      padding: 20px;
+      background: transparent;
+      border-radius: 0;
+      display: block;
+      padding: 0;
+    }
+
+    .qr-placeholder img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
 
     .status {
@@ -554,7 +582,12 @@
 
       <div class="hero-card">
         <div class="people-doodle">
-          🧑‍⚕️👩‍⚕️🧑‍⚕️
+          <div class="people-group">
+            <div class="person">👩‍⚕️</div>
+            <div class="person">🧑‍⚕️</div>
+            <div class="person">👩‍⚕️</div>
+          </div>
+          <div class="people-text">Welcome together</div>
         </div>
       </div>
     </section>
