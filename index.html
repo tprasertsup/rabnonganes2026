@@ -12,20 +12,21 @@
 
   <style>
     :root {
-      --sky-top: #3672b4;
-      --sky-mid: #7fa9d6;
-      --sky-low: #eaf1fa;
-      --pink: #d1477e;
-      --pink-soft: #f2d9e4;
-      --teal: #16867c;
-      --teal-soft: #d9eeeb;
-      --navy: #16305a;
-      --navy-deep: #0f2140;
-      --ink: #202942;
-      --muted: #5b6478;
+      --sky-top: #1fa5ea;
+      --sky-mid: #5cc6f4;
+      --sky-low: #e8f8ff;
+      --pink: #ff4f8b;
+      --pink-soft: #ffe1ec;
+      --teal: #12b886;
+      --teal-soft: #d3f7ec;
+      --gold: #ffc94d;
+      --navy: #123c6b;
+      --navy-deep: #0b2a4d;
+      --ink: #1c2b45;
+      --muted: #57657c;
       --card: #ffffff;
-      --border: #dde3ee;
-      --shadow: 0 14px 34px rgba(22, 48, 90, 0.1);
+      --border: #d8ecf9;
+      --shadow: 0 14px 34px rgba(18, 60, 107, 0.12);
       --radius: 22px;
     }
 
@@ -167,6 +168,11 @@
       color: var(--teal);
     }
 
+    .hero-copy h1 {
+      color: #ffffff;
+      text-shadow: 0 2px 14px rgba(11, 42, 77, 0.25);
+    }
+
     h2 {
       font-size: clamp(28px, 3.6vw, 38px);
       line-height: 1.2;
@@ -212,6 +218,11 @@
       color: var(--navy);
       max-width: 600px;
       margin-bottom: 24px;
+    }
+
+    .hero-copy .lead {
+      color: #ffffff;
+      text-shadow: 0 1px 8px rgba(11, 42, 77, 0.2);
     }
 
     .quick-facts {
@@ -758,7 +769,7 @@
 
   <main>
     <section class="section hero">
-      <div>
+      <div class="hero-copy">
         <div class="eyebrow">Welcome Our New Residents</div>
 
         <h1>
